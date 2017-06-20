@@ -1,8 +1,22 @@
-var firstNameEl = document.getElementByID("replacef");
-var lastNameEl = document.getElementByID("replacel");
+var firstNameEl = document.getElementById("replacef");
+var lastNameEl = document.getElementById("replacel");
+var header = document.getElementById("hid");
 
-var firstName = document.getElementByID("firstname").value;
-var lastName = document.getElementByID("lastname").value;
+header.onclick = function(){
+	header.innerHTML = "Hello.";
+};
 
-firstNameEl.innerHTML = firstName;
-lastNameEl.innerHTML = lastName;
+var firstName = "Philip"; //document.getElementByID("firstname").value;
+var lastName = "Moss"; //document.getElementByID("lastname").value;
+
+
+
+
+firstNameEl.onclick = function(){
+	firstNameEl.innerHTML = firstName;
+};	
+
+lastNameEl.onclick = function(){
+	lastNameEl.innerHTML = lastName;
+};
+
